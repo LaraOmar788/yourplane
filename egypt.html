@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/land.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <nav>
+    <div>
+        <img src="img/image.png" alt="Logo">
+        <h3 data-translate="country1"><span>Egypt</span></h3>
+        <h3 data-translate="city1">Cairo</h3>
+        <h3 data-translate="city2">Hurghada</h3>
+        <h3 data-translate="city3">Istanbul</h3>
+        <h3 data-translate="country2">Turkey</h3>
+    </div>
+</nav>
+<div class="nav2">
+    <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="about">
+        <a href="flight.html" data-translate="link_flight">Flight</a>
+        <a href="index.html" data-translate="link_home">Home</a>
+        <a href="hotel.html" data-translate="link_hotels">Hotels</a>
+        <img src="img/image.png" alt="Logo">
+    </div>
+</div>
+<div class="nav3">
+    <div class="imgs">
+        <h1 data-translate="header_plane">Your Plane</h1>
+        <a href="vlog.html"><img src="img/blog.jpeg" alt="Blog"></a>
+    </div>
+    <div class="search">
+        <input class="input1" data-translate="search" placeholder="Please enter all small letters" id="search">
+        <span data-translate="go" onclick="go2()">Go</span>
+        <select class="languageSelect" onchange="switchLanguage(this.value)">
+          <option value="en">EN</option>
+          <option value="ar">AR</option>
+      </select>
+    </div>
+    <div class="lands">
+        <a href="#"><span data-translate="country1">Egypt</span></a>
+        <a href="cairo.html" data-translate="city1">Cairo</a>
+        <a href="HURGHADA.html" data-translate="city2">Hurghada</a>
+        <a href="istanbul.html" data-translate="city3">Istanbul</a>
+        <a href="turkey.html" data-translate="country2">Turkey</a>
+    </div>
+</div>
+<section class="learn">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <img src="img/egypt201.jpg" alt="Egypt">
+    <h1 data-translate="article_title1">Visa-Free Countries for Egyptian Passport 2024:</h1>
+    <p data-translate="article_content1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit...
+    </p>
+    <img src="img/egyptian1.jpg" alt="Egyptian">
+    <h1 data-translate="article_title2">Another Title for Article 2024:</h1>
+    <p data-translate="article_content2">
+        Details about visa-free countries for Egyptians...
+    </p>
+    <img src="img/pcr.jpg">
+    <h1 data-translate="article_title2">Visa-Free Countries for Egyptian Passport 2024:<br> Countries Egyptians Can Travel to Without a Visa</h1>
+    <p data-translate="article_content2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fuga deserunt vero rem soluta, itaque quasi sint <br>harum maxime quae, possimus laboriosam aliquid? Molestiae, voluptate Lorem ipsum dolor sit ame.......<span>read more</span></p>
+    <img src="img/travel-from-.jpg">
+    <h1 data-translate="article_title2">Visa-Free Countries for Egyptian Passport 2024:<br> Countries Egyptians Can Travel to Without a Visa</h1>
+    <p data-translate="article_content2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fuga deserunt vero rem soluta, itaque quasi sint <br>harum maxime quae, possimus laboriosam aliquid? Molestiae, voluptate Lorem ipsum dolor sit ame.......<span>read more</span></p>
+</section>
+<footer>
+    <div class="footer">
+        <div class="pr1">
+            <h1 data-translate="footer_company1">Company</h1>
+            <h2 data-translate="footer_about1">About Your Plane</h2>
+            <h2 data-translate="footer_about2">Our Services</h2>
+            <h2 data-translate="footer_about3">Contact Us</h2>
+
+            <h2 data-translate="footer_about1">About Your Plane</h2>
+            <h2 data-translate="footer_about2">Our Services</h2>
+            <h2 data-translate="footer_about3">Contact Us</h2>
+            <h2 data-translate="footer_about4">Careers</h2>
+        </div>
+        <div class="pr2">
+            <h1 data-translate="footer_company2">Services</h1>
+            <h2 data-translate="footer_service1">Booking Flights</h2>
+            <h2 data-translate="footer_service2">Hotels</h2>
+            <h2 data-translate="footer_service3">Tours</h2>
+            <h1 data-translate="footer_company2">Services</h1>
+            <h2 data-translate="footer_service1">Booking Flights</h2>
+            <h2 data-translate="footer_service2">Hotels</h2>
+            <h2 data-translate="footer_service3">Tours</h2>
+        </div>
+        <div class="pr3">
+            <h1 data-translate="footer_follow">Follow Us</h1>
+            <h2 data-translate="footer_twitter">Twitter</h2>
+            <h2 data-translate="footer_facebook">Facebook</h2>
+            <h2 data-translate="footer_instagram">Instagram</h2>
+            <h1 data-translate="footer_follow">Follow Us</h1>
+            <h2 data-translate="footer_twitter">Twitter</h2>
+            <h2 data-translate="footer_facebook">Facebook</h2>
+            <h2 data-translate="footer_instagram">Instagram</h2>
+        </div>
+    </div>
+    <hr class="hr1" />
+    <img class="logo7" src="img/image.png" alt="Logo">
+    <div class="footer-social">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="ni" data-translate="footer_copyright">
+        Copyright © 2025 Your Plane, Inc. All rights reserved
+    </div>
+</footer>
+<script src="js/lands.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fligh.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <div class="nav1" id="scrollButton" onclick="scrollToTop()">
+        <img src="img/image.png" />
+        <div class="bb">
+            <h2><a href="flight.html" class="text-di" data-translate="flights">flights</a></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a></h2>
+            <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a></h2>
+        </div>
+        <div class="home-nav2">
+            <!-- <h2 id="so1"><a href="signup.html" class="home-nav2h2" data-translate="sign_up">sign up</a></h2> -->
+            <button id="light-mode">☀️ Light Mode</button>
+            <button id="dark-mode">🌙 Dark Mode</button>
+            <select class="languageSelect" onchange="switchLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+            <!-- <h2 id="so2"><a href="sighin.html" class="home-nav2h21" data-translate="sign_in">sign in</a></h2> -->
+            <!-- <h2 id="so2"><a href="sighin.html" class="home-nav2h21" data-translate="sign_in">sign in</a></h2> -->
+        </div>
+        <p class="role2" onclick="nav()">=
+        </p>
+
+        <select class="languageSelect3" onchange="switchLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+        </select>
+        </div>
+    </div>
+    <section class="home">
+        <img src="img/image.png" class="home-img" />
+        <p class="role" onclick="nav()">=
+        </p>
+        <div class="ornav" id="ornav">
+            <h2><a href="index.html" class="text-di" data-translate="flights">home</a></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a></h2>
+          <h2><a href="#" class="text-di" data-translate="up" onclick="up()">up</a></h2>   
+          <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a></h2>  
+          <button id="light-mode2">☀️</button>
+          <button id="dark-mode2">🌙                        </button>
+              </div>
+    
+              <!-- <h2 onclick="logout2()" class="bn2" id="bn">Logout</h2> -->
+        </div>
+        <select class="languageSelect2" onchange="switchLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+        </select>
+        <div class="home-nav1">
+            <h2><a href="index.html" class="text-di" data-translate="home">home</a><i class="fa-solid fa-plane-circle-check"></i></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a><i class="fa-solid fa-hotel"></i></h2>
+            <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a><i class="fa-solid fa-book-open"></i></h2>
+        </div>
+        <div class="home-nav2">
+            <div class="prto" id="pryo">
+                <img src="img/WhatsApp Image .jpg">
+                <div>
+                  <br>
+                  <br>
+                  <h1>name: <span id="user-name"></span></h1>
+                  <h1>number: <span id="user-number"></span></h1>
+                  <h1>email: <span id="user-email"></span></h1>
+    
+                </div>
+              </div>
+              <h1 onclick="logout()" class="bn" id="bn">Logout</h1>
+        
+            <select class="languageSelect" onchange="switchLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+            <!-- <h2 id="so4"><a href="sighin.html" class="text-di" >sign in</a><i class="fa-solid fa-right-to-bracket"></i></h2> -->
+        </div>
+        </div>
+        <div class="background-container"></div>
+        <p class="caption"></p>
+        <div class="dots-container">
+        <div class="dot" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        </div>
+        <div class="cr"></div>
+        <div class="cr2"></div>
+    </section>
+    <div class="flight30">
+        <div class="airport">
+            <div class="buttons">
+                <button data-translate="one-way">One-way</button>
+                <button data-translate="round-trip">Round-trip</button>
+            </div>
+            <input class="from" placeholder="from" id="Name1" data-translate="from" />
+            <i class="fa-solid fa-repeat"></i>
+            <input class="to" placeholder="to" id="Name2" data-translate="to" />
+            <input class="Date1" placeholder="Departure Date" type="date" id="startDate" data-translate="departure-date" />
+            <i class="fa-solid fa-calendar-days"></i>
+            <input class="Date2" placeholder="Return Date" type="date" id="endDate" data-translate="return-date" />
+            <button class="go" onclick="save()" data-translate="go">go</button>
+            <img src="img/ghghg-Photoroom.png" class="di1" />
+        </div>
+    </div>
+    <div class="imgs120">
+        <img src="img/wego banner-01_335282142.png">
+        <img src="img/images/doc.jpg">
+        <img src="img/images/doc2.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    <br>
+    <br>
+    <br>
+    <div class="cards132">
+        <div class="box-container">
+
+       <div class="box-item">
+                <div class="flip-box">
+                    <div class="flip-box-front text-center" style="background-image: url('img/images/try.avif');">
+                        <div class="inner color-white">
+                            <h3 class="flip-box-header"><i class="fa-solid fa-location-dot"></i></h3>
+                        </div>
+                    </div>
+                    <div class="flip-box-back text-center" style="background-color: #2c567e;">
+                        <div class="inner color-white">
+                            <img class="img12" src="img/images/look-no-further.png">
+                            <h3 class="flip-box-header2" data-translate="top-travel-app">Top travel app in The United Kingdom</h3>
+                            <p data-translate="short-description">A short sentence describing this callout is.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+           
+            <div class="box-item">
+                <div class="flip-box">
+                    <div class="flip-box-front text-center" style="background-image: url('img/images/88.avif');">
+                        <div class="inner color-white">
+                            <h3 class="flip-box-header"><i class="fa-regular fa-money-bill-1"></i></h3>
+                        </div>
+                    </div>
+                    <div class="flip-box-back text-center" style="background-color: rgb(0 0 0);">
+                        <div class="inner color-white">
+                            <img class="img12" src="img/images/shop-with-confidence.png">
+                            <h3 class="flip-box-header2" data-translate="shop-with-confidence">Shop with confidence</h3>
+                            <p data-translate="short-description">A short sentence describing this callout is.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+       
+            <div class="box-item">
+                <div class="flip-box">
+                    <div class="flip-box-front text-center filter-" style="background-image: url('img/images/try3.avif');">
+                        <div class="inner color-white">
+                            <h3 class="flip-box-header"><i class="fa-solid fa-handshake-simple"></i></h3>
+                        </div>
+                    </div>
+                    <div class="flip-box-back text-center" style="background-color:#2f5aa8;">
+                        <div class="inner color-white">
+                            <img class="img12" src="img/images/instant-booking.png">
+                            <h3 class="flip-box-header2" data-translate="instant-booking">Instant booking</h3>
+                            <p data-translate="short-description">A short sentence describing this callout is.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ck123">
+        <h1 class="ckh1" data-translate="trip-ideas">Trip Ideas</h1>
+     <div class="par-card">
+            <div class="card-ca">
+                <img src="img/images/HRG.jpg" alt="Hurghada">
+                <div class="learn">
+                    <h3 data-translate="hurghada">Hurghada</h3>
+                    <h5 data-translate="egypt">Egypt</h5>
+                    <h5 data-translate="round-trip">Round-trip from</h5>
+                    <h4>US$112</h4>
+                </div>
+            </div>
+            <br>
+            <div class="card-ca">
+                <img src="img/RMF1.jpg" alt="Marsa Alam City">
+                <div class="learn">
+                    <h3 data-translate="marsa-alam">Marsa Alam City</h3>
+                    <h5 data-translate="egypt">Egypt</h5>
+                    <h5 data-translate="round-trip">Round-trip from</h5>
+                    <h4>US$172</h4>
+                </div>
+            </div>
+            <br>
+            <div class="card-ca">
+                <img src="img/SSH.jpg" alt="Sharm El Sheikh">
+                <div class="learn">
+                    <h3 data-translate="sharm-el-sheikh">Sharm El Sheikh</h3>
+                    <h5 data-translate="egypt">Egypt</h5>
+                    <h5 data-translate="round-trip">Round-trip from</h5>
+                    <h4>US$112</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    <section class="par-card2">
+        <div class="card-ca">
+            <img src="img/IST (1).jpg">
+            <div class="learn">
+                <h3 data-translate="turkey">Turkey</h3>
+                <h5 data-translate="istanbul">Istanbul</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div>
+        <br>
+        <div class="card-ca">
+            <img src="img/MIL.jpg">
+            <div class="learn">
+                <h3 data-translate="milan">Milan</h3>
+                <h5 data-translate="italy">ITALY</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div>
+        <br>
+        <div class="card-ca">
+            <img src="img/VCE.jpg">
+            <div class="learn">
+                <h3 data-translate="venice">Venice</h3>
+                <h5 data-translate="italy">Italy</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="par-card3">
+        <div class="card-ca">
+            <img src="img/BCN.jpg">
+            <div class="learn">
+                <h3 data-translate="barcelona">Barcelona</h3>
+                <h5 data-translate="spain">Spain</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div>
+        <br>
+        <div class="card-ca">
+            <img src="img/CPT.jpg">
+            <div class="learn">
+                <h3 data-translate="cape-town">Cape Town</h3>
+                <h5 data-translate="south-africa">South Africa</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div>
+        <br>
+        <div class="card-ca">
+            <img src="img/TIF.jpg">
+            <div class="learn">
+                <h3 data-translate="taif">Taif</h3>
+                <h5 data-translate="saudi-arabia">Saudi Arabia</h5>
+                <h5 data-translate="round-trip">Round-trip from</h5>
+                <h4>US$112</h4>
+            </div>
+        </div> 
+    </section>
+</section>
+    <section class="Stories">
+        <h1 data-translate="stories">Stories</h1>
+        <div class="btm-ho1" onclick="movePrev()" id="prevButton"><</div>
+        <div class="btm-ho2" onclick="moveNext()"id="nextButton">></div>
+        <div class="allin">
+            <div class="st-card" id="cardsContainer1">
+                <div class="stories1">
+                    <img src="img/egypt201.jpg" class="stories1-img">
+                    <p class="storyp" data-translate="visa-free-countries">Visa-Free Countries for Egyptian Passport 2025: Countries Egyptians Can Travel to Without a Visa like Cairo</p>
+                    <p class="storyp2" data-translate="your-plane">Your plane</p>
+                    <a href="blog.html#story"><img src="img/image.png" class="img-go"></a>
+                </div>
+                <div class="stories1">
+                    <img src="img/egyptian1.jpg" class="stories1-img">
+                    <p class="storyp" data-translate="decadent-stays">Indulge in Decadent Stays This Winter at Rabat, Hurghada</p>
+                    <p class="storyp2" data-translate="your-plane">Your plane</p>
+                    <a href="blog.html#story"><img src="img/image.png" class="img-go"></a>
+                </div>
+                <div class="stories1">
+                    <img src="img/hurgada.jpg" class="stories1-img">
+                    <p class="storyp" data-translate="decadent-stays">Indulge in Decadent Stays This Winter at Rabat, Hurghada</p>
+                    <p class="storyp2" data-translate="your-plane">Your plane</p>
+                    <a href="blog.html#story"><img src="img/image.png" class="img-go"></a>
+                </div>
+                <div class="stories1">
+                    <img src="img/istanbul.jpg" class="stories1-img">
+                    <p class="storyp" data-translate="new-hotels">Discover the Best New Hotels in Istanbul in 2025</p>
+                    <p class="storyp2" data-translate="your-plane">Your plane</p>
+                    <a href="blog.html#story">  <img src="img/image.png" class="img-go"></a>
+                </div>
+                <div class="stories1">
+                    <img src="img/shutterstock.jpg" class="stories1-img">
+                    <p class="storyp" data-translate="pharaoh-appointment">An Appointment With the Pharaoh: Face to Face with King Tutankhamun at the Egyptian Museum</p>
+                    <p class="storyp2" data-translate="your-plane">Your plane</p>
+                    <a href="blog.html#story"><img src="img/image.png" class="img-go"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <div class="pr1">
+                <h1 data-translate="footer_company1">Company</h1>
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+    
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+                <h2 data-translate="footer_about4">Careers</h2>
+            </div>
+            <div class="pr2">
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+                <h2 data-translate="footer_service3">Tours</h2>
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+                <h2 data-translate="footer_service3">Tours</h2>
+            </div>
+            <div class="pr3">
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                <h2 data-translate="footer_instagram">Instagram</h2>
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                <h2 data-translate="footer_instagram">Instagram</h2>
+            </div>
+        </div>
+        <hr class="hr1" />
+        <hr class="hp2" />
+        <img class="logo7" src="img/image.png" />
+        <a href="massage.html">
+            <div class="tooltip-container">
+                <span class="tooltip" data-translate="massage">Massage</span>
+                <span class="text">@</span>
+            </div>
+        </a>
+        <div class="footer-social">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="ni" data-translate="copyright">Copyright © 2025 your plane, Inc. All rights reserved</div>
+    </footer>
+
+
+
+
+      
+
+      <script src="js/flight.js"></script>
+</body>
+</html>

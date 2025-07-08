@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vlog</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="img/image.png" alt="logo">
+            <h3 data-translate="egypt">Egypt</h3>
+            <h3 data-translate="cairo">Cairo</h3>
+            <h3 data-translate="hurghada">Hurghada</h3>
+            <h3 data-translate="istanbul">Istanbul</h3>
+            <h3 data-translate="turkey">Turkey</h3>
+        </div>
+
+    </nav>
+    <div class="nav2">
+        <div class="icons">
+            <i class="fa-brands fa-twitter" data-translate="twitter"></i>
+            <i class="fa-brands fa-facebook" data-translate="facebook"></i>
+            <i class="fa-brands fa-instagram" data-translate="instagram"></i>
+        </div>
+        <div class="about">
+            <a href="hotel.html" data-translate="hotels">Hotels</a>
+            <a href="flight.html" data-translate="flights">Flight</a>
+            <a href="index.html" data-translate="home">Home</a>
+            <img src="img/image40.png" alt="logo">
+        </div>
+    </div>
+    <div class="nav3">
+        <div class="imgs">
+            <h1 data-translate="your-plane">YOUR PLANE</h1>
+            <a href="vlog.html"><img src="img/blog.jpeg" alt="blog"></a>
+        </div>
+        <div class="search">
+            <input class="input1" data-translate="search" placeholder="Please enter all small letters" id="search">
+            <span data-translate="go" onclick="go2()">Go</span>
+            <select class="languageSelect" onchange="switchLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+        </div>
+        <div class="lands">
+            <a href="egypt.html" data-translate="egypt-link">EGYPT</a>
+            <a href="cairo.html" data-translate="cairo-link">Cairo</a>
+            <a href="hurghada.html" data-translate="hurghada-link">Hurghada</a>
+            <a href="istanbul.html" data-translate="istanbul-link">Istanbul</a>
+            <a href="turkey.html" data-translate="turkey-link">Turkey</a>
+        </div>
+    </div>
+
+    <section class="learn-more">
+        <div class="black"></div>
+        <div class="background-container"></div>
+        <p class="caption"></p>
+        <div class="dots-container">
+            <div class="dot" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+        </div>
+    </section>
+
+    <section class="story" id="story">
+        <BR>
+            <br>
+            <br>
+        <h1 data-translate="latest-travel-stories">Latest Travel Stories</h1>
+        <br><br>
+        <div class="story1">
+            <img src="img/egypt201.jpg" alt="egypt image">
+            <p data-translate="story1">Visa-Free Countries for Egyp<BR>tian Passport 2025...</p>
+        </div>
+        <div class="story2">
+            <img src="img/hurgada.jpg" alt="hurghada image">
+            <p data-translate="story2">Egypt Green List: Which Coun<BR>tries Are on Egypt’s Green List?</p>
+        </div>
+        <div class="story3">
+            <img src="img/egyptian1.jpg" alt="egyptian image">
+            <p data-translate="story3">Egypt Green List:<BR> Which Countries Are on Egypt’s Green List?</p>
+        </div>
+        <div class="story4">
+            <img src="img/istanbul.jpg" alt="istanbul image">
+            <p data-translate="story4">Discover the Best New Hotels in Istanbul in 2025</p>
+        </div>
+        <div class="story5">
+            <img src="img/shutterstock.jpg" alt="shutterstock image">
+            <p data-translate="story5">An Appointment With the Pharaoh: Face to Face<BR> with King Tutankhamun at the Egyptian Museum</p>
+        </div>
+        <div class="story6">
+            <img src="img/IST.jpg" alt="IST image">
+            <p data-translate="story6">Discover the Best New Hotels in Istanbul in 2025</p>
+        </div>
+        <button class="put" id="showInputsButton" data-translate="set-your-story">Set your story</button>
+        <input type="file" id="imageInput" accept="image/*" class="inp">
+        <br><br>
+        <input type="text" id="textInput" placeholder="Enter your text here" class="inp">
+        <br><br><br><br>
+        <br>
+        <button id="displayButton" style="display: none;" class="inp" data-translate="display">Display</button>
+        <div id="preview" class="try"></div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="pr1">
+                <h1 data-translate="footer_company1">Company</h1>
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+    
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+           
+            </div>
+            <div class="pr2">
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+                <h2 data-translate="footer_service3">Tours</h2>
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+       
+            </div>
+            <div class="pr3">
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                <h2 data-translate="footer_instagram">Instagram</h2>
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                
+            </div>
+        </div>
+        <hr class="hr1" />
+        <hr class="hp2" />
+        <img class="logo7" src="img/image.png" alt="logo">
+        <a href="massage.html">
+            <div class="tooltip-container">
+                <span class="tooltip" data-translate="massage">Massage</span>
+                <span class="text">@</span>
+            </div>
+        </a>
+
+        <div class="footer-social">
+            <i class="fa-brands fa-twitter" data-translate="twitter"></i>
+            <i class="fa-brands fa-facebook" data-translate="facebook"></i>
+            <i class="fa-brands fa-youtube" data-translate="youtube"></i>
+            <i class="fa-brands fa-instagram" data-translate="instagram"></i>
+        </div>
+
+        <div class="ni" data-translate="copyright">Copyright © 2025 your plane, Inc. All rights reserved</div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

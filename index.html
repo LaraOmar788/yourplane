@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <div class="nav1" id="scrollButton" onclick="scrollToTop()">
+        <img src="img/image.png" />
+        <div class="bb">
+            <h2><a href="flight.html" class="text-di" data-translate="flights">flights</a></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a></h2>
+            <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a></h2>
+        </div>
+        <div class="home-nav2">
+    
+            <h2 id="so1"><a href="signup.html" class="home-nav2h2" data-translate="sign_up"></a></h2>
+            <select class="languageSelect" onchange="switchLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+            <h2 id="so2"><a href="sighin.html" class="home-nav2h21" data-translate="sign_in">sign in</a></h2>
+        </div>
+        <p class="role2" onclick="nav()">=
+        </p>
+
+        <select class="languageSelect3" onchange="switchLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+        </select>
+    </div>
+    <section class="home">
+        <img src="img/image.png" class="home-img" />
+        <p class="role" onclick="nav()">=
+        </p>
+        <div class="ornav" id="ornav">
+            <h2><a href="flight.html" class="text-di" data-translate="flights">flights</a></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a></h2>
+            <h2><a href="#" class="text-di" data-translate="up" onclick="up()">up</a></h2>  
+          <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a></h2>   
+          <h2><a href="sighin.html" class="text-di2" id="sin">sign in</a></h2>   
+          <h2 onclick="logout2()" class="bn2" id="bn2">Logout</h2>   
+             <div class="prto2" id="pryo2">
+                <img src="img/WhatsApp Image .jpg">
+                <div>
+                  <br>
+                  <br>
+                  <h1>name: <span id="user-name2"></span></h1>
+                  <h1>number: <span id="user-number2"></span></h1>
+                  <h1>email: <span id="user-email2"></span></h1>
+    
+                </div>
+              </div>
+   
+        </div>
+
+        
+        <select class="languageSelect2" onchange="switchLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+        </select>
+        <div class="home-nav1">
+            <h2><a href="flight.html" class="text-di" data-translate="flights">flights</a><i class="fa-solid fa-plane-circle-check"></i></h2>
+            <h2><a href="hotel.html" class="text-di" data-translate="hotels">hotels</a><i class="fa-solid fa-hotel"></i></h2>
+            <h2><a href="blog.html" class="text-di" data-translate="vlog">blog</a><i class="fa-solid fa-book-open"></i></h2>
+            
+        </div>
+        <div class="home-nav2">
+            <div class="prto" id="pryo">
+                <img src="img/WhatsApp Image .jpg">
+                <div>
+                  <br>
+                  <br>
+                  <h1>name: <span id="user-name"></span></h1>
+                  <h1>number: <span id="user-number"></span></h1>
+                  <h1>email: <span id="user-email"></span></h1>
+    
+                </div>
+              </div>
+              <h2 onclick="logout()" class="bn" id="bn">Logout</h2>
+            <h2 id="so3"> <a href="signup.html" class="home-nav2h2" data-translate="sign_up"></a></h2>
+            <select class="languageSelect" onchange="switchLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+            <h2 id="so4"><a href="sighin.html" class="text-di" >sign in</a><i class="fa-solid fa-right-to-bracket"></i></h2>
+        </div>
+        <div class="body">
+            <div id="container">
+                <i id="plane" class="fa-solid fa-plane"></i>
+                <div id="text"></div>
+            </div>
+            <h1 class="by1"> fly to sky<br>with your plane                <i id="plane2" class="fa-solid fa-plane"></i>
+            </h1>
+        </div>
+        <img src="img/image.png" class="logo" />
+        <button data-translate="learn_more">LEARN MORE</button>
+        <img src="img/ghghg-Photoroom.png" class="more" />
+        <img src="img/25599-Photoroom (1).png" class="more2" />
+    </section>
+    <section class="flights">
+        <h1 data-translate="flights">Flights</h1>
+        <div class="airport">
+            <div class="buttons">
+                <button data-translate="one_way">One-way</button>
+                <button data-translate="round_trip">Round-trip</button>
+            </div>
+            <input class="from" placeholder="from" id="Name1" data-translate="from" />
+            <i class="fa-solid fa-repeat"></i>
+            <input class="to" placeholder="to" id="Name2" data-translate="to" />
+            <input class="Date1" placeholder="Departure Date" type="date" id="startDate" />
+            <i class="fa-solid fa-calendar-days"></i>
+            <input class="Date2" placeholder="Return Date" type="date" id="endDate" />
+            <button class="go" onclick="save()" data-translate="go">Go</button>
+            <img src="img/ghghg-Photoroom.png" class="di1" />
+        </div>
+    
+    </section>
+    <section class="COUN">
+        <h1 data-translate="best_country">The best country</h1>
+    
+        <div class="egypt1">
+            <img src="img/EGYPT.avif" class="egypt" />
+    
+            <div class="egypt2">
+                <h2 data-translate="egypt">Egypt</h2>
+                <p data-translate="egypt_desc">
+                    Lorem ipsum dolor, sit amet consectetur <br />adipisicing elit. Earum
+                    odio quia vel?
+                </p>
+                <a href="egypt.html"><button data-translate="go">go</button></a>
+            </div>
+        </div>
+    
+        <div class="cairo1">
+            <img src="img/cairo.jpeg" class="cairo" />
+            <div class="cairo2">
+                <h2 data-translate="cairo">Cairo</h2>
+                <p data-translate="cairo_desc">
+                    Lorem ipsum dolor, sit amet consectetur <br />adipisicing elit. Earum
+                    odio quia vel?
+                </p>
+                <a href="cairo.html"><button data-translate="go">go</button></a>
+            </div>
+        </div>
+    
+        <div class="hg1">
+            <img src="img/Aerial Beachscape.jpeg" class="hr" />
+            <div class="hr2">
+                <h2 data-translate="hurghada">Hurghada</h2>
+                <p data-translate="hurghada_desc">
+                    Lorem ipsum dolor, sit amet consectetur <br />adipisicing elit. Earum
+                    odio quia vel?
+                </p>
+                <a href="HURGHADA.html"><button data-translate="go">go</button></a>
+            </div>
+        </div>
+    
+        <div class="Istanbul1">
+            <img src="img/Winter Tram in European City.jpeg" class="Istanbul" />
+            <div class="Istanbul2">
+                <h2 data-translate="istanbul">Istanbul</h2>
+                <p data-translate="istanbul_desc">Lorem ipsum dolor, sit amet consect</p>
+                <a href="istanbul.html"><button data-translate="go">go</button></a>
+            </div>
+        </div>
+    
+        <div class="tr1">
+            <img
+                src="img/Evening Aerial View of European Canal with Cruise Boat.jpeg"
+                class="tr"
+            />
+            <div class="tr2">
+                <h2 data-translate="turkey">Turkey</h2>
+                <p data-translate="turkey_desc">
+                    Lorem ipsum dolor, sit amet consectetur <br />adipisicing elit. Earum
+                    odio quia vel?
+                </p>
+                <a href="turkey.html"><button data-translate="go">go</button></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="pr1">
+                <h1 data-translate="footer_company1">Company</h1>
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+    
+                <h2 data-translate="footer_about1">About Your Plane</h2>
+                <h2 data-translate="footer_about2">Our Services</h2>
+                <h2 data-translate="footer_about3">Contact Us</h2>
+                <h2 data-translate="footer_about4">Careers</h2>
+            </div>
+            <div class="pr2">
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+                <h2 data-translate="footer_service3">Tours</h2>
+                <h1 data-translate="footer_company2">Services</h1>
+                <h2 data-translate="footer_service1">Booking Flights</h2>
+                <h2 data-translate="footer_service2">Hotels</h2>
+                <h2 data-translate="footer_service3">Tours</h2>
+            </div>
+            <div class="pr3">
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                <h2 data-translate="footer_instagram">Instagram</h2>
+                <h1 data-translate="footer_follow">Follow Us</h1>
+                <h2 data-translate="footer_twitter">Twitter</h2>
+                <h2 data-translate="footer_facebook">Facebook</h2>
+                <h2 data-translate="footer_instagram">Instagram</h2>
+            </div>
+        </div>
+        <hr class="hr1" />
+        <hr class="hp2" />
+        <img class="logo7" src="img/image.png" />
+        <a href="massage.html">
+          <div class="tooltip-container">
+            <span class="tooltip" data-translate="message">message</span>
+            <span class="text">@</span>
+          </div>
+        </a>
+        <div class="footer-social">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="ni" data-translate="copyright">Copyright © 2025 your plane, Inc. All rights reserved</div>
+      </footer>
+      
+    <script src="js/index.js"></script>
+    </body>
+    </html>

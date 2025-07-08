@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ti.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav class="nav2">
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="about">
+            <a href="hotel.html">hotels</a>
+            <a href="flight.html">flight</a>
+            <a href="index.html">home</a>
+            <img src="img/image40.png">
+        </div>
+    </nav>
+    <div class="airport">
+        <div class="buttons">
+          <button>One-way</button>
+          <button>Round-trip</button>
+        </div>
+        <input class="from" placeholder="from" id="displayFirstName" />
+        <i class="fa-solid fa-repeat"></i>
+        <input class="to" placeholder="to" id="displayLastName" />
+        <input class="Date1" placeholder="Departure Date" type="date" id="displayStartDate" />
+        <i class="fa-solid fa-calendar-days"></i>
+        <input class="Date2" placeholder="Return Date" type="date" id="displayEndDate" />
+        <button class="go">go</button>
+        <img src="img/ghghg-Photoroom.png" class="di1" />
+    </div>
+    <div class="more">
+      <div class="or">
+        <br>
+        <br>
+      </div>
+        <h1>More<br> Details</h1>
+        <h3>adult <i class="fa-solid fa-person"></i></h3>
+        <button class="hp" onclick="pl()">+</button>
+        <span class="who" id="how" >0</span>
+        <button class="hp2" onclick="mi()">-</button>
+        <button onclick="save2() " class="cost">go cost</button>
+    </div>
+    <div class="tic">
+        <img src="img/img-hotels/air.webp" class="tic-img">
+        <div class="obout-tic">from: <span id="ticFirstName" ></span></div>
+        <div class="obout-tic2">to: <span id="ticLastName"></span></div>
+        <br>
+        <div class="obout-tic3">come: <span id="ticStartDate"></span></div>
+        <div class="obout-tic4">back: <span id="ticEndDate"></span></div>
+    
+        <img src="img/image40.png" class="logo-tic">
+        <img src="img/img-hotels/where3.png" class="logo-tic2">
+        <img src="img/img-hotels/where2.png" class="logo-tic3">
+        <span class="go30">going:</span>
+        <span class="back30">Return:</span>
+      </div>
+      <span class="price20">
+        <span class="dot"></span>
+     <h2></h2>
+        <h3>get it</h3>
+      </span>
+      <h1 id="price" class="pr-h1"></h1>
+      <div class="alltic">
+      <div class="tic">
+        <img src="img/img-hotels/air2.webp" class="tic-img">
+        <div class="obout-tic">from: <span class="ticFirstName"></span></div>
+        <div class="obout-tic2">to: <span class="ticLastName"></span></div>
+        <br>
+        <div class="obout-tic3">come: <span class="ticStartDate"></span></div>
+        <div class="obout-tic4">back: <span class="ticEndDate"></span></div>
+        <img src="img/image40.png" class="logo-tic">
+        <img src="img/img-hotels/where2.png" class="logo-tic2">
+        <img src="img/img-hotels/where3.png" class="logo-tic3">
+        <span class="go30">going:</span>
+        <span class="back30">Return:</span>
+      </div>
+      <span class="price20">
+        <span class="dot"></span>
+        <h1>215$</h1>
+        <h3 >get it</h3>
+      </span>
+      <h1 id="price" class="pr-h1"></h1>
+      <div class="tic">
+        <img src="img/img-hotels/air5.webp" class="tic-img2">
+        <br>
+        <br>
+        <Br>
+        <div class="obout-tic">from: <span class="ticFirstName"></span></div>
+        <div class="obout-tic2">to: <span class="ticLastName"></span></div>
+        <br>
+        <div class="obout-tic3">come: <span class="ticStartDate"></span></div>
+        <div class="obout-tic4">back: <span class="ticEndDate"></span></div>
+        <img src="img/image40.png" class="logo-tic">
+        <img src="img/img-hotels/where3.png" class="logo-tic2">
+        <img src="img/img-hotels/where2.png" class="logo-tic3">
+        <span class="go30">going:</span>
+        <span class="back30">Return:</span>
+      </div>
+      <span class="price20">
+        <span class="dot"></span>
+        <h1>115$</h1>
+        <h3>get it</h3>
+      </span>
+    </div>
+      <script src="js/ti.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+/<link rel="stylesheet" href="css/cost copy.css">
+</head>
+<body>
+    <nav class="nav2">
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="about">
+            <a href="hotel.html">hotels</a>
+            <a href="flight.html">flight</a>
+            <a href="index.html">home</a>
+            <img src="img/image40.png">
+        </div>
+    </nav>
+    <div class="back33"></div>
+    <h1 class="Hotels" >Hotels cost</h1>
+    <div id="Hotels">
+        
+    </div>
+
+    <h2 class="h2">cost:<span id="cost"></span>$</h2>
+    <h2 onclick="de()" class="delete">deletall</h2>
+    <script>   
+     const cartItems = document.getElementById("Hotels");
+    const totalDisplay = document.getElementById("total");
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let total = 518;
+
+    cart.forEach(item => {
+        cartItems.innerHTML += `
+<span>
+                <div class="card1-ho">
+    <img src="${item.image}" alt="Resort Image">
+    <div class="card-content">
+        <h2 class="card-title">${item.name}</h2>
+
+
+        <div class="rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="score">8.8/10 Excellent (47)</div>
+        </div>
+
+        <div class="details">
+            <div>🛏️ 5 stars</div>
+    
+        </div>
+
+        <div class="price-section">
+            <div class="price">${item.price}</div>
+            <div class="discount">$1,155</div>
+            <div class="saving">Save $637</div>
+
+            </span>
+               - $${item.price}
+        `;
+        
+   
+        document.getElementById('cost').innerText=total
+        total += item.price;
+        });
+
+
+        totalDisplay.textContent = `Total: $${total}`;
+function de(){
+    cart.forEach(item => {
+        cartItems.innerHTML = '';
+        localStorage.removeItem("cart");
+        price=0
+
+    });
+}
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="css/cost.css">
+</head>
+<body>
+    <nav class="nav2">
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="about">
+            <a href="hotel.html">hotels</a>
+            <a href="flight.html">flight</a>
+            <a href="index.html">home</a>
+            <img src="img/image40.png">
+        </div>
+    </nav>
+
+    <h1 class="Ticket" >Ticket</h1>
+    <div id="Ticket">
+        <!-- <div class="tic">
+
+            <div class="obout-tic">from: <span id="ticFirstName" ></span></div>
+            <div class="obout-tic2">to: <span id="ticLastName"></span></div>
+            <br>
+            <div class="obout-tic3">come: <span id="ticStartDate"></span></div>
+            <div class="obout-tic4">back: <span id="ticEndDate"></span></div>
+    
+          </div>
+          <span class="price20">
+            <span class="dot"></span>
+            <h1 id="price">450</h1><h2>$</h2>
+    
+          </span>
+    </div> -->
+
+    <div class="tic">
+        <img src="img/img-hotels/air.webp" class="tic-img">
+        <div class="obout-tic">from: <span id="ticFirstName" ></span></div>
+        <div class="obout-tic2">to: <span id="ticLastName"></span></div>
+        <br>
+        <div class="obout-tic3">come: <span id="ticStartDate"></span></div>
+        <div class="obout-tic4">back: <span id="ticEndDate"></span></div>
+    
+        <img src="img/image40.png" class="logo-tic">
+        <img src="img/img-hotels/where3.png" class="logo-tic2">
+        <img src="img/img-hotels/where2.png" class="logo-tic3">
+        <span class="go30">going:</span>
+        <span class="back30">Return:</span>
+        <h1 id="price" class="ri"></h1>
+      </div>
+      <span class="price20">
+        <span class="dot"></span>
+        <h1 id="price2"></h1><h2>      </h2>
+        <h3>get it</h3>
+      </span>
+      <div class=" rivi">
+        <h1>Reviews</h1>
+        <div class=" learn">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas,<br> perspiciatis. Veniam hic tempora i<br>psum cum alias facilis soluta libero pariatu<br>r aliquam, eius voluptate. Natus libero nostrum neque mollitia fugit. Doloremque, nihil officiis explicabo tempore non ad? Aliquam, ut minima eligendi laudantium, culpa eius accusantium, reprehenderit quaerat repudiandae eum debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia architecto voluptatem voluptatum reiciendis dolorum repudiandae, est veritatis non. Soluta autem praesentium sint error hic voluptate quis, amet saepe quisquam facere rem possimus et incidunt qui eum mollitia delectus blanditiis assumenda officiis inventore aut! Vel voluptate, quidem aut sunt a sequi?
+       
+        </div>
+<div class="more">
+    <h1 onclick="food()">food <i class="fa-solid fa-bowl-food"></i></h1>
+    <h1 onclick="Service() ">Service <i class="fa-solid fa-bell-concierge"></i></h1>
+    <h1 onclick="trip()">trip <i class="fa-solid fa-plane"></i></h1>
+</div>
+<p class="op1img"><i class="fa-regular fa-comment"></i></p>
+<h2  class="h2play" id="play">Choose Please🥰</h2>
+<div class=" op1" id="op1">
+    <h2 >It's delicious😋</h2>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing<br> elit. Rerum amet beatae<br> perspiciatis!</p>
+    <h4>leen omar<br>2-30-2024</h4>
+</div>
+<div class=" op2" id="op2" >
+    <h2 >Quality service ,is<br> not an act; it is<br> a habit⭐</h2>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing<br> elit. Rerum amet beatae<br> perspiciatis!</p>
+    <h4>yasmin<br>1-1-2025</h4>
+</div>
+<div class=" op3" id="op3">
+    <h2 >best trip💜</h2>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing<br> elit. Rerum amet beatae<br> perspiciatis!</p>
+    <h4>Lara <br>20-7-2024</h4>
+</div>
+      </div>
+      <h2 class="all-done" onclick="Audio2()">thanks</h2>
+      <h2  class="all-done">price<span id="pri"></span></h2>
+
+        <audio id="myAudio" src="img/mp3-output-ttsfree(dot)com.mp3"></audio>
+
+    <script>   
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const firstName = localStorage.getItem('Name11');
+    const lastName = localStorage.getItem('Name22');
+    const startDate = localStorage.getItem('startDate');
+    const endDate = localStorage.getItem('endDate');
+
+    document.getElementById('ticFirstName').innerText = firstName || 'Not provided';
+    document.getElementById('ticLastName').innerText = lastName || 'Not provided';
+    document.getElementById('ticStartDate').innerText = startDate || 'Not provided';
+    document.getElementById('ticEndDate').innerText = endDate || 'Not provided';
+  
+
+document.querySelectorAll('.ticFirstName').forEach(el => {
+    el.innerText = firstName || 'Not provided';
+});
+document.querySelectorAll('.ticLastName').forEach(el => {
+    el.innerText = lastName || 'Not provided';
+});
+document.querySelectorAll('.ticStartDate').forEach(el => {
+    el.innerText = startDate || 'Not provided';
+});
+document.querySelectorAll('.ticEndDate').forEach(el => {
+    el.innerText = endDate || 'Not provided';
+});
+});
+var op2=document.getElementById('op2')
+var op=document.getElementById('op1')
+var op3=document.getElementById('op3')
+var play=document.getElementById('play')
+function food(){
+    op3.style.display='none'; 
+    op2.style.display='none'; 
+    play.style.display='none';
+op.style.display='block';
+ 
+}
+function Service() {
+
+ 
+    op.style.display='none';
+    op3.style.display='none';
+    play.style.display='none';  
+    op2.style.display='block'; 
+}
+function trip(){
+    op.style.display='none'; 
+    op2.style.display='none';
+    play.style.display='none';  
+op3.style.display='block';
+}
+const price = localStorage.getItem('p1');
+document.getElementById('pri').textContent = price || 'Not provided';
+document.getElementById('price').textContent = price || 'Not provided';
+document.getElementById('price2').textContent = price || 'Not provided';
+function Audio2() {
+    let audio = document.getElementById("myAudio");
+    if (audio.paused) {
+      audio.play();
+    } 
+  }
+</script>
+</body>
+
+</html>
